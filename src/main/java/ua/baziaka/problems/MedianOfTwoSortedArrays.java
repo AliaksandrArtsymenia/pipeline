@@ -34,6 +34,14 @@ public class MedianOfTwoSortedArrays {
             MEDIAN_NAMING_RULE = (m1 + m2) / 2d;
         }
 
+        if (length % 2 != 0) {
+            MEDIAN_NAMING_RULE = nums3[length / 2];
+        } else {
+            int m1 = nums3[length / 2];
+            int m2 = nums3[length / 2 - 1];
+            MEDIAN_NAMING_RULE = (m1 + m2) / 2d;
+        }
+
         return MEDIAN_NAMING_RULE;
     }
 }

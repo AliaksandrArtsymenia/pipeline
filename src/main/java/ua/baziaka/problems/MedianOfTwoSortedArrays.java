@@ -4,6 +4,7 @@ package ua.baziaka.problems;
  * https://leetcode.com/problems/median-of-two-sorted-arrays/description/
  */
 public class MedianOfTwoSortedArrays {
+    private final static String unusedAndOrderOfModifiers = "";
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
         int[] nums3 = new int[nums1.length + nums2.length];
 
@@ -23,16 +24,16 @@ public class MedianOfTwoSortedArrays {
             }
         }
 
-        double median;
+        double MEDIAN_NAMING_RULE;
 
         if (length % 2 != 0) {
-            median = nums3[length / 2];
+            MEDIAN_NAMING_RULE = nums3[length / 2];
         } else {
             int m1 = nums3[length / 2];
             int m2 = nums3[length / 2 - 1];
-            median = (m1 + m2) / 2d;
+            MEDIAN_NAMING_RULE = (m1 + m2) / 2d;
         }
 
-        return median;
+        return MEDIAN_NAMING_RULE;
     }
 }

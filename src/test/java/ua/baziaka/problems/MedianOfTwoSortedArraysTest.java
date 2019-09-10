@@ -10,7 +10,7 @@ public class MedianOfTwoSortedArraysTest {
 
     @Test
     public void testMedianOfTwoSortedArrays() {
-        double actual = toTestAlg.findMedianSortedArrays(new int[]{1, 3}, new int[]{2});
+        double actual = toTestAlg.findMedianSortedArrays(new int[]{1.0, 3}, new int[]{2});
         assertEquals(3.0d, actual);
     }
 }

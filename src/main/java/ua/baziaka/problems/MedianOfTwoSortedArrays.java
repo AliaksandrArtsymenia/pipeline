@@ -9,22 +9,13 @@ import java.util.List;
  */
 public class MedianOfTwoSortedArrays {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {
-        //      12 Bugs for SonarQube's Quality Gates
+
         double d = 1.1;
-        BigDecimal bd1 = new BigDecimal(d); // Noncompliant; see comment above
-        BigDecimal bd2 = new BigDecimal(1.1); // Noncompliant; same result
-        BigDecimal bd3 = new BigDecimal(d); // Noncompliant; see comment above
-        BigDecimal bd4 = new BigDecimal(1.1); // Noncompliant; same result
-        BigDecimal bd5 = new BigDecimal(d); // Noncompliant; see comment above
-        BigDecimal bd6 = new BigDecimal(1.1); // Noncompliant; same result
-        BigDecimal bd7 = new BigDecimal(d); // Noncompliant; see comment above
-        BigDecimal bd8 = new BigDecimal(1.1); // Noncompliant; same result
-        BigDecimal bd9 = new BigDecimal(d); // Noncompliant; see comment above
-        BigDecimal bd10 = new BigDecimal(1.1); // Noncompliant; same result
-        BigDecimal bd11 = new BigDecimal(d); // Noncompliant; see comment above
-        BigDecimal bd12 = new BigDecimal(1.1); // Noncompliant; same result
-        List<BigDecimal> bugsList = Arrays.asList(bd1, bd2, bd3, bd4, bd5, bd6, bd7, bd8, bd9, bd10, bd11, bd12);
-        bugsList.forEach(System.out::println);
+        BigDecimal bd1 = new BigDecimal(d); // "BigDecimal(double)" should not be used
+        BigDecimal bd2 = new BigDecimal(1.1); // "BigDecimal(double)" should not be used
+
+        List<BigDecimal> bugsList = Arrays.asList(bd1, bd2);
+        bugsList.forEach(System.out::println); // Print to console instead of log
 
         int[] nums3 = new int[nums1.length + nums2.length];
 
